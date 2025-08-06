@@ -1,0 +1,14 @@
+# Wayland consideration
+window-decoration = client
+
+# Keybinds
+keybind = alt+r=reload_config
+keybind = ctrl+shift+up=new_split:up
+keybind = ctrl+shift+down=new_split:down
+keybind = ctrl+shift+left=new_split:left
+keybind = ctrl+shift+right=new_split:right
+
+# Themeing
+theme = "JetBrains Darcula"
+background = 1d1d2e
+font-family = "JetBrainsMono Nerd Font Propo"

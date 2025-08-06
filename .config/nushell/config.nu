@@ -17,9 +17,6 @@
 # options using:
 #     config nu --doc | nu-highlight | less -R
 
-mkdir ($nu.data-dir | path join "vendor/autoload")
-starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
-
 $env.config.show_banner = false
 $env.config.buffer_editor = "/usr/bin/micro"
 
@@ -69,3 +66,6 @@ def --env mp3-dl [
 ] {
 	spotify-dl $link -f mp3 -d $location
 }
+
+mkdir ($nu.data-dir | path join "vendor/autoload")
+starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
