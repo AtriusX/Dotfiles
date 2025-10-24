@@ -26,6 +26,7 @@ list_help() {
         --micro) Installs the Micro text editor.
         --tmux) Installs the Tmux terminal multiplexer.
         --ghostty) Installs the Ghostty terminal emulator.
+        --posting) Installs the Posting HTTP Client.
     "
 }
 # Install all requested components
@@ -65,6 +66,11 @@ for arg in "$@"; do
         --ghostty)
             source ./install_scripts/install_ghostty.sh
             install_ghostty
+        ;;
+
+        --posting)
+            source ./install_scripts/install_posting.sh
+            install_posting
         ;;
 
         *)

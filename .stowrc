@@ -1,2 +1,6 @@
 --target=~
 --ignore=.stowrc
+--ignore=./install.sh
+--ignore=./install_scripts
+--ignore=history
+--ignore=history.txt
