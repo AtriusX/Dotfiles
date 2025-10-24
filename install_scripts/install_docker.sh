@@ -8,7 +8,9 @@ install_docker() {
 
     echo "Installing Docker..."
     # Download and run Docker installation script
-    curl -fsSL https://get.docker.com | sh --dry-run
+    curl -fsSL https://get.docker.com -o get-docker.sh
+    sudo sh ./get-docker.sh
+    rm ./get-docker.sh
     echo -e "Docker installation complete.\n"
     # Start docker at boot and start the service now
     echo "Configuring Docker to start on boot..."
