@@ -1,14 +1,30 @@
 # Wayland consideration
 window-decoration = client
-
 # Keybinds
 keybind = alt+r=reload_config
 keybind = ctrl+shift+up=new_split:up
 keybind = ctrl+shift+down=new_split:down
 keybind = ctrl+shift+left=new_split:left
 keybind = ctrl+shift+right=new_split:right
+# Tab management
+keybind = ctrl+t=new_tab
+keybind = ctrl+w=close_tab
+keybind = ctrl+tab=next_tab
+keybind = ctrl+shift+tab=previous_tab
+# Clipboard management
+clipboard-read = allow
+clipboard-write = allow
 
+keybind = ctrl+c=copy_to_clipboard
+keybind = ctrl+v=paste_from_clipboard
+# Selection
+keybind = ctrl+a=select_all
 # Themeing
-theme = "JetBrains Darcula"
-background = 1d1d2e
+theme = Ayu Mirage
 font-family = "JetBrainsMono Nerd Font Propo"
+# GTK Settings
+gtk-toolbar-style = flat
+gtk-wide-tabs = false
+gtk-titlebar-hide-when-maximized = true
+# Cursor settings
+cursor-style = bar

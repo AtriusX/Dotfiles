@@ -25,6 +25,7 @@ list_help() {
         --btop) Installs the Btop system monitor.
         --micro) Installs the Micro text editor.
         --tmux) Installs the Tmux terminal multiplexer.
+        --ghostty) Installs the Ghostty terminal emulator.
     "
 }
 # Install all requested components
@@ -59,6 +60,11 @@ for arg in "$@"; do
         --tmux)
             source ./install_scripts/install_tmux.sh
             install_tmux
+        ;;
+
+        --ghostty)
+            source ./install_scripts/install_ghostty.sh
+            install_ghostty
         ;;
 
         *)
